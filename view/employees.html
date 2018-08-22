@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8"></meta>
+<title>社員一覧</title>
+<style type="text/css" rel="stylesheet">
+table {
+  cell-spacing: 0;
+}
+th {
+  background-color: #eeeeee;
+}
+td {
+  background-color: #eeffff;
+}
+</style>
+</head>
+
+<body>
+<h1>{{.Title}}</h1>
+
+<div>現在時刻: {{.Now}}</div>
+
+<table class="tab">
+  <tr>
+    <th>社員ID</th>
+    <th>ログインID</th>
+    <th>Ename</th>
+    <th>Jname</th>
+    <th>Email</th>
+  </tr>
+  {{range .EmployeeList}}
+  <tr>
+    <td>{{.EmployeeId}}</td>
+    <td>{{.LoginId}}</td>
+    <td>{{.Ename}}</td>
+    <td>{{.Jname}}</td>
+    <td>{{.Email}}</td>
+  </tr>
+  {{end}}
+</table>
+
+</body>
+
+</html>
