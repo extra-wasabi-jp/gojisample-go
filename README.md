@@ -35,5 +35,5 @@ $ ./gojisample-go
 
 ### アクセスする
 ```bash
-$ curl http://localhost:8000/employees
+$ curl http://localhost:8000/employees/
 ```
